@@ -12,6 +12,7 @@ const main=async()=>{
     await firstWaveTxn.wait();
     await waveContract.getTotalWaves();
     await waveContract.getArrayAddress();
+    
 
     const SecondWaveTxn=await waveContract.connect(randomPerson).wave();
     await SecondWaveTxn.wait();

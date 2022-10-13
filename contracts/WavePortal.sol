@@ -1,12 +1,12 @@
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.17;
+pragma solidity 0.8.17;
 
 import "hardhat/console.sol";
 
 contract WavePortal {
     uint256 totalWaves;
     address[] public addressArray;
-    mapping(address=>uint256) mostWaves;
+    mapping(address=>uint256) public mostWaves;
     constructor() {
         console.log("My first contract and I am smart");
     }
